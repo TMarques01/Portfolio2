@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
 
   /* optional overlay for readability */
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.15);
   background-blend-mode: overlay;
 
   /* reserve space at top and bottom for fixed navbar/footer */
@@ -131,7 +131,7 @@
 
 @media (max-width: 720px) {
   .name {
-    font-size: clamp(2rem, 9vw, 4rem);
+    font-size: clamp(3rem, 9vw, 6rem);
     letter-spacing: 0.35rem;
     padding: 0 1rem;
   }

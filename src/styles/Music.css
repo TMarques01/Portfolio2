@@ -14,7 +14,7 @@
   padding-bottom: var(--footer-height, 64px);
   box-sizing: border-box;
 
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.19);
   background-blend-mode: overlay;
 
   display: flex;
@@ -77,7 +77,7 @@
   font-size: 3rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 7.5625rem; /* 189.063% */
+  /* line-height: 7.5625rem; 189.063% */
 
   cursor: pointer;
 
@@ -91,13 +91,14 @@
 
 @media (max-width: 720px) {
   .music-title {
-    font-size: clamp(3rem, 7vw, 5rem);
+    font-size: clamp(5rem, 7vw, 6rem);
+    /* font-size: 6rem; */
     margin: 0; /* Reduced gap between title and artist */
   }
   .music-artist {
     font-size: clamp(1.5rem, 5vw, 2.5rem);
     margin: 1rem;
-    height: 30px;
+    height: 1.5rem;
   }
   .music-page {
     background-position: center 30%; /* Shift image for better framing on small screens */

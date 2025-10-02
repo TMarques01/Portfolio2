@@ -26,6 +26,7 @@ body {
 .navbar-menu {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: space-between;
@@ -82,7 +83,7 @@ body {
 /* small screens: stack navbar items vertically */
 @media (max-width: 720px) {
   .navbar-menu {
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: row; /* Stack links vertically */
     gap: 4px; /* Reduce spacing between links */
     align-items: flex-start; /* Align links to the start */
     justify-content: center;
@@ -92,7 +93,7 @@ body {
   .info,
   .music {
     font-size: 1.6rem; /* Reduce font size for smaller screens */
-    text-align: left; /* Center all links */
+    text-align: center; /* Center all links */
     padding: 0.3rem 0.5rem; /* Reduce padding */
   }
 }

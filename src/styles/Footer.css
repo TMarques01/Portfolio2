@@ -28,9 +28,10 @@ body {
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  flex-direction: row;
+  gap: 1.5rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   box-sizing: border-box;
   padding: 0 8px;
@@ -83,7 +84,7 @@ body {
 /* Media query for screens smaller than 720px */
 @media (max-width: 720px) {
   .footer-menu {
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: row; /* Stack links vertically */
     gap: 4px; /* Reduce spacing between links */
     align-items: flex-start; /* Align links to the start */
     justify-content: center;
@@ -93,8 +94,8 @@ body {
   .linkedin,
   .mail,
   .cv {
-    font-size: 1.3rem; /* Reduce font size for smaller screens */
-    text-align: left; /* Center all links */
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    text-align: center; /* Center all links */
     padding: 0.3rem 0.5rem; /* Reduce padding */
   }
 }
